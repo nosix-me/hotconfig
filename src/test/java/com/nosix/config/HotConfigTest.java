@@ -54,7 +54,9 @@ public class HotConfigTest {
 		String[] locations = new String[]{"classpath:application_ac.xml"};
 		new ClassPathXmlApplicationContext(locations);
 		HotConfig.init("com.nosix.config");
-		TimeUnit.SECONDS.sleep(4);//等待配置加载
-		HotConfigTest.print();
+		while(true) {
+			TimeUnit.SECONDS.sleep(3);
+			HotConfigTest.print();
+		}
 	}
 }
