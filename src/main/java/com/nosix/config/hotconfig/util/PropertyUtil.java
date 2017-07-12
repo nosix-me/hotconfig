@@ -10,7 +10,6 @@ import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 
 public class PropertyUtil extends PropertyPlaceholderConfigurer {
     
-    //读取spring通配符文件信息
     private static Map<String, Object> ctxPropertiesMap;  
     
     @Override
@@ -31,6 +30,5 @@ public class PropertyUtil extends PropertyPlaceholderConfigurer {
     public static Object getContextProperty(String name) {  
         return ctxPropertiesMap.get(name);  
     }  
-    
     
 }
