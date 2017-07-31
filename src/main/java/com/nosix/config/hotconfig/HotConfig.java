@@ -46,7 +46,8 @@ public class HotConfig {
 					checkClassType(f.getType(), clz);
 					final String filePath = config.source();
 					Class<?> configClazz = config.target();
-					if(map.get(filePath) == null) {
+					String key = clz.getName() + f.getName() + filePath;
+					if(map.get(key) == null) {
 						checkFile(filePath, clz);
 						HotConfigExecutor hotConfigExecutor = new HotConfigExecutor();
 						hotConfigExecutor.setConfigFileName(filePath);
@@ -59,9 +60,9 @@ public class HotConfig {
                                   return new Thread(r, String.format(masterThreadName+" filepath:"+ filePath));
                               }
 						}));
-						map.put(filePath, hotConfigExecutor);
+						map.put(key, hotConfigExecutor);
 					} else {
-						HotConfigExecutor hotConfigExecutor = map.get(filePath);
+						HotConfigExecutor hotConfigExecutor = map.get(key);
 						hotConfigExecutor.addFieldList(f);
 					}
 				}

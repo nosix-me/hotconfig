@@ -28,7 +28,7 @@ public class HotConfigTest {
 	@HConfig(source="${name.json}",keys={"name"},target=Name.class)
 	private static Map<String,Name> nameMap = new HashMap<String,Name>();
 
-	@HConfig(source="${name2.json}",target=Name.class)
+	@HConfig(source="${name.json}",target=Name.class)
 	private static List<Name> nameList = new ArrayList<Name>();
 
 	public static void print() {
