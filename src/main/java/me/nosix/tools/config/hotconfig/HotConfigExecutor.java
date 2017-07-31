@@ -1,4 +1,4 @@
-package com.nosix.config.hotconfig;
+package me.nosix.tools.config.hotconfig;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -24,7 +24,7 @@ import org.slf4j.LoggerFactory;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
-import com.nosix.config.hotconfig.util.PropertyUtil;
+import me.nosix.tools.config.hotconfig.util.PropertyUtil;
 
 public class HotConfigExecutor {
 	private static Logger logger = LoggerFactory.getLogger(HotConfig.class);

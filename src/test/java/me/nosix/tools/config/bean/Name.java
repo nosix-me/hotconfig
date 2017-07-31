@@ -1,4 +1,4 @@
-package com.nosix.config.bean;
+package me.nosix.tools.config.bean;
 
 public class Name {
 	private String name;

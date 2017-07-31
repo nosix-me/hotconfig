@@ -1,4 +1,4 @@
-package com.nosix.config.common;
+package me.nosix.tools.config.common;
 
 import java.io.BufferedReader;
 import java.io.File;
