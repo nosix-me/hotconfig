@@ -1,4 +1,4 @@
-package me.nosix.tools.config;
+package em.nosix.tools.config;
 
 
 import java.util.ArrayList;
@@ -8,11 +8,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 
-import me.nosix.tools.config.hotconfig.annotation.HConfig;
+import em.nosix.tools.config.bean.Name;
+import em.nosix.tools.config.hotconfig.annotation.HConfig;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import me.nosix.tools.config.bean.Name;
-import me.nosix.tools.config.hotconfig.HotConfig;
+import em.nosix.tools.config.hotconfig.HotConfig;
 
 
 public class HotConfigTest {
@@ -53,7 +53,7 @@ public class HotConfigTest {
 	public static void main(String[] args) throws Throwable {
 		String[] locations = new String[]{"classpath:application_ac.xml"};
 		new ClassPathXmlApplicationContext(locations);
-		HotConfig.init("me.nosix.tools.config");
+		HotConfig.init("em.nosix.tools.config");
 		while(true) {
 			TimeUnit.SECONDS.sleep(3);
 			HotConfigTest.print();

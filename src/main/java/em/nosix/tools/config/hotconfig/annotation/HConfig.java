@@ -1,4 +1,4 @@
-package me.nosix.tools.config.hotconfig.annotation;
+package em.nosix.tools.config.hotconfig.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

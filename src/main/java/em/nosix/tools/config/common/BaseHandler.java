@@ -1,4 +1,4 @@
-package me.nosix.tools.config.common;
+package em.nosix.tools.config.common;
 
 import java.util.Map;
 

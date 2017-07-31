@@ -2,13 +2,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>me.nosix.tools</groupId>
+  <groupId>em.nosix.tools</groupId>
   <artifactId>hotconfig</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
   <name>hotconfig</name>
   <description>HotConfig is a easy tools for reload settings files.</description>
-  <url>http://www.smart4j.org/</url>
+  <url>http://github.com/nosix-me/hotconfig</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>

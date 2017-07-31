@@ -1,16 +1,13 @@
-package me.nosix.tools.config;
+package em.nosix.tools.config;
 
 import java.util.Map;
 import java.util.Map.Entry;
 
-import me.nosix.tools.config.common.BaseHandler;
-import me.nosix.tools.config.common.PropertiesConfiguration;
+import em.nosix.tools.config.common.BaseHandler;
+import em.nosix.tools.config.common.PropertiesConfiguration;
 
 import java.io.File;
 
-/**
- * Unit test for simple App.
- */
 public class CommonConfigTest extends BaseHandler {
 
 	public static void main(String[] args) {
