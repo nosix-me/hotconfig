@@ -1,4 +1,4 @@
-package me.nosix.tools.config.hotconfig;
+package com.nosixtools.config.hotconfig;
 
 import java.io.File;
 import java.lang.reflect.Field;
@@ -13,8 +13,8 @@ import java.util.Map.Entry;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 
-import me.nosix.tools.config.hotconfig.util.PropertyUtil;
-import me.nosix.tools.config.hotconfig.annotation.HConfig;
+import com.nosixtools.config.hotconfig.util.PropertyUtil;
+import com.nosixtools.config.hotconfig.annotation.HConfig;
 import com.xiaoleilu.hutool.util.ClassUtil;
 
 public class HotConfig {

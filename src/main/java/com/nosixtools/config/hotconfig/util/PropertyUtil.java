@@ -1,4 +1,4 @@
-package me.nosix.tools.config.hotconfig.util;
+package com.nosixtools.config.hotconfig.util;
 
 import java.util.HashMap;
 import java.util.Map;

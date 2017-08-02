@@ -1,10 +1,10 @@
-package me.nosix.tools.config;
+package com.nosixtools.config;
 
 import java.util.Map;
 import java.util.Map.Entry;
 
-import me.nosix.tools.config.common.BaseHandler;
-import me.nosix.tools.config.common.PropertiesConfiguration;
+import com.nosixtools.config.common.BaseHandler;
+import com.nosixtools.config.common.PropertiesConfiguration;
 
 import java.io.File;
 
