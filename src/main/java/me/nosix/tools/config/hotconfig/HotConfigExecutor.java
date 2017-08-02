@@ -1,4 +1,4 @@
-package em.nosix.tools.config.hotconfig;
+package me.nosix.tools.config.hotconfig;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -17,7 +17,7 @@ import java.util.Properties;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import em.nosix.tools.config.hotconfig.util.PropertyUtil;
+import me.nosix.tools.config.hotconfig.util.PropertyUtil;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.exception.ExceptionUtils;
 import org.slf4j.Logger;
