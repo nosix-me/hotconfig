@@ -1,14 +1,14 @@
 # hotconfig
 
 
-##使用方式
+## 使用方式
 Example
 请参考代码中测试用例
 
 添加依赖
 ````
 <dependency>
-	<groupId>com.github.nosix-me</groupId>
+	<groupId>com.nosixtools</groupId>
 	<artifactId>hotconfig</artifactId>
 	<version>1.0.0</version>
 </dependency>
