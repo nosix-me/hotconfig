@@ -8,17 +8,15 @@ import org.slf4j.LoggerFactory;
 
 import com.google.common.eventbus.EventBus;
 
-public class FileWatcherRunnable implements Runnable {
+public class FileWatcher implements Runnable {
 		
-		private static final Logger logger = LoggerFactory.getLogger(FileWatcherRunnable.class);
-		private final File file;
+		private static final Logger logger = LoggerFactory.getLogger(FileWatcher.class);
 		private final EventBus eventBus;
 		private final Configuration configuration;
         private long lastChange;
         
-        public FileWatcherRunnable(File file,EventBus eventBus, Configuration configuration) {
+        public FileWatcher(Configuration configuration, EventBus eventBus) {
             super();
-            this.file = file;
             this.eventBus = eventBus;
             this.configuration = configuration;
             this.lastChange = 0L;
@@ -26,15 +24,16 @@ public class FileWatcherRunnable implements Runnable {
 
         @Override
         public void run() {
-            logger.debug("Checking file:{} for changes", file);
-
+            File file  = configuration.getFile();
+        	logger.debug("Checking file:{} for changes", file);
+            
             long lastModified = file.lastModified();
 
             if (lastModified > lastChange || lastModified == 0) {
                 logger.info("Reloading configuration file:{}", file);
                 lastChange = lastModified;
                 try {
-                    eventBus.post(configuration.getConfig(file));
+                    eventBus.post(configuration.getConfigContent(file));
                 } catch (Exception e) {
                     logger.error("Failed to load configuration data. Exception follows {}",
                             ExceptionUtils.getFullStackTrace(e));

@@ -1,4 +1,4 @@
-package com.nosixtools.config;
+package com.nosixtools.config.hotconfig;
 
 
 import java.util.ArrayList;
@@ -9,7 +9,6 @@ import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 
 import com.nosixtools.config.bean.Name;
-import com.nosixtools.config.hotconfig.HotConfig;
 import com.nosixtools.config.hotconfig.annotation.HConfig;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
